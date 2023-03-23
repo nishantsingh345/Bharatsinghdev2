@@ -1,0 +1,56 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Contrail+One&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Great Vibes", cursive;
+  }
+}
+
+/* custom css */
+.swiper-button-next {
+  color: #b76e79 !important;
+}
+.swiper-button-prev {
+  color: #b76e79 !important;
+}
+
+/* add */
+.add {
+  background-image: url("https://template.hasthemes.com/hiraola/hiraola/assets/images/banner/static-banner-2.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: 100% 100%;
+  background-size: cover;
+}
+
+.stickyImg {
+  background-image: url("https://demo2.tokomoo.com/tisara/wp-content/uploads/sites/12/2019/08/portrait-of-young-beautiful-woman-with-jewelry-2_comp.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  position: relative;
+  overflow: hidden;
+}
+.stickyImg::before {
+  position: absolute;
+  content: "";
+  display: block;
+  background-repeat: no-repeat;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  color: white;
+  background-color: #00000096;
+  z-index: 0;
+  pointer-events: none;
+}
+.stickyImg .inner {
+  color: white !important;
+  position: relative;
+  z-index: 1;
+}
